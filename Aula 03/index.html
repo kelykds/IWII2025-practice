@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content "width=devicewidth, initial-scale=1.0">
+        <title>Métodos de Interação com o Usuário</title> <!-- Existem duas formas de colocar o JavaScript na página:-->
+        <script>
+            alert("Bem-Vindo(a)!"); 
+            let resposta = confirm("Você está gostando do curso?");
+            if (resposta) {
+                alert("Que ótimo! Continuaremos assim!");
+            } else {
+                alert("Não se preocupe, vamos melhorar juntos!");
+            }
+            let nome = prompt("Qual é o seu nome?");
+            alert("Olá, " + nome + "! Vamos à aula 03?");
+        </script> <!-- 1: Dentro de uma tag script -->
+    </head>
+    <body>
+        <h1>Métodos de Interação com o Usuário</h1>
+        <p>1: alert("Mensagem");</p>
+        <p>2: prompt("Pergunta");</p>
+        <p>3: confirm("Confirmação");</p>
+    </body>
+    
+</html>
