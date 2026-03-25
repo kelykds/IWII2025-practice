@@ -1,6 +1,7 @@
 // Converte Celsius para Fahreinheit
 function ctof(tempc) {
-    Number(tempc);
+    tempc = Number(tempc);
+    if (isNaN(tempc)) return 'Inválido';
     const tempf = (tempc * (9 / 5)) + 32;
     return tempf;
 }
