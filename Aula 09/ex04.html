@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 07</title>
+    <script>
+        function open1() {
+            window.open("https://www.google.com");
+        }
+        function open2() {
+            window.open("https://www.google.com", "simples", "width=350, height=400");
+        }
+        function open3() {
+            window.open("https://www.google.com", "simples", "menubar, scrollbars, width=300, height=200");
+        }
+    </script>
+</head>
+<body>
+    <h1>Exercício 07</h1>
+    <form action="">
+        Dê um clique no botão para abrir o Google em uma janela simples: 
+        <input type="button" value="Abrir Google" onclick="open1()"><br><br>
+        Dê um clique no botão para abrir o Google em uma janela sem barra de menu e scrollbars:
+        <input type="button" value="Abrir Google (Janela Simples)" onclick="open2()"><br><br>
+        Dê um clique no botão para abrir o Google em uma janela com barra de menu e scrollbars, mas sem barra de endereço e padrão:
+        <input type="button" value="Abrir Google (Janela com Barra de Menu e Scrollbars)" onclick="open3()"><br><br>
+    </form>
+</body>
+</html>

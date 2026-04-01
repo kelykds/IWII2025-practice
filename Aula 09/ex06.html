@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 09</title>
+        <script>
+            function square(x) {
+                document.write(x * x);
+            }
+            function cube(x) {
+                return x * x * x;
+            }
+
+            y = 5;
+            document.write("O quadrado de " + y + " é: ");
+            square(y);
+        </script>
+    </head>
+    <body>
+        <h1>Exercício 09</h1>
+        <form action="">
+            Informe um número para calcular o cubo e em seguida pressione a tecla TAB ou dê um clique fora do campo de texto para calcular o cubo do número informado. <br>
+            <input type="text" name="aocubo" value="" id="" onblur="alert('O cubo de ' + this.value + ' é: ' + cube(this.value))">
+        </form>
+    </body>
+</html>
