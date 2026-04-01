@@ -4,6 +4,15 @@
         <meta charser="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Formulário Padrão Sem JavaScript</title>
+        <script>
+            nameuser=window.prompt("Qual é o seu nome?");
+            if (nameuser != null && nameuser != "") {
+                document.write("Olá, " + nameuser);
+            } else {
+                document.write("Olá, visitante!");
+            }
+            
+        </script>
     </head>
     <body>
         <form action="mailto:citizenkds@gmail.com" method="POST" enctype="text/plain" name="cadastro">
@@ -45,8 +54,18 @@
             Observações Gerais:<br>
             <textarea name="observacoes" rows="5" cols="60" id=""></textarea><br>
 
-            <input type="submit" value="Enviar os dados">
+            <input type="submit" value="Enviar os dados" onclick="valid()">
             <input type="reset" value="Limpar os dados">
         </form>
+
+        <script>
+            function valid() {
+                if (document.cadastro.nome.value == "") {
+                    window.alert("Você deve preencher o campo 'nome'.");
+                    document.cadastro.nome.focus();
+                    return false;
+                }
+            }
+        </script>
     </body>
 </html>
