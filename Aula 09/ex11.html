@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+        <title>Exercício 14</title>
+        <script>
+            function mouseEmCima(imagem){
+                imagem.src = "https://preview.redd.it/manga-spoiler-i-colored-the-picture-of-maki-from-the-newest-v0-pknp9ogbzeq61.jpg?width=640&crop=smart&auto=webp&s=61db188b6a76cf06687a1d4e8c22b7cea145eb16";
+            }
+            function mouseFora(imagem){
+                imagem.src = "https://ovicio.com.br/wp-content/uploads/2026/01/20260121-maki-zenin-em-poster-individual-da-temporada-3-de-jujutsu-kaisen-ovicio-555x555.webp";
+            }
+        </script>
+    </head>
+    <body>
+        Passe o mouse sobre a imagem: <br><br>
+        <img src="https://ovicio.com.br/wp-content/uploads/2026/01/20260121-maki-zenin-em-poster-individual-da-temporada-3-de-jujutsu-kaisen-ovicio-555x555.webp" onmouseover="mouseEmCima(this)" onmouseout="mouseFora(this)" width="300" height="300"><br><br>
+        1) Agora padronize os tamanhos das imagens<br><br>
+        2) Mude o evento para que as imagens sejam trocadas ao clicar com o mouse
+    </body>
+</html>
